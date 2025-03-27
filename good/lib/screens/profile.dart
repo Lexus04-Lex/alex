@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:good/screens/rah.dart';
 class Profile extends StatefulWidget {
   const Profile({super.key});
   @override
@@ -82,7 +83,6 @@ class _ProfileState extends State<Profile> {
     );
   }
 }
-
 class PersonPage extends StatefulWidget {
   const PersonPage({super.key});
 
@@ -119,6 +119,7 @@ class _PersonPageState extends State<PersonPage> {
             SizedBox(height: 10),
             ElevatedButton(onPressed: ()=> context.read<PersonBloc>().add(PersonProfile('Person5')),
                 child: Text('Load user 5')),
+
           ],
         ));
       }),

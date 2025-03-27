@@ -57,7 +57,7 @@ class _HomeWidgetState extends State<HomeWidget> {
             _selectedIndex = index;
           });
         },
-        items: const [
+        items:  [
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
